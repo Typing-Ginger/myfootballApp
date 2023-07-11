@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes slide-in {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-div {
+    animation: slide-in 0.5s ease;
+}
+
+.perspective {
+    perspective: 850px;
+}
+
+.logo-shadow{
+    --tw-drop-shadow: drop-shadow(0px 25px 15px rgb(0 0 0 / 100));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@keyframes logo-pop-left{
+    from {
+        transform: translateY(-200px) rotateY(50deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotateY(50deg);
+        opacity: 1;
+    }
+}
+
+.animate-logo-pop-left{
+    animation: logo-pop-left 0.8s ease;
+    transform: translateY(0px) rotateY(50deg);
+}
+
+@keyframes logo-pop-right{
+    from {
+        transform: translateY(-200px) rotateY(-50deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotateY(-50deg);
+        opacity: 1;
+    }
+}
+
+.animate-logo-pop-right{
+    animation: logo-pop-right 0.8s ease;
+    transform: translateY(0px) rotateY(-50deg);
+}
