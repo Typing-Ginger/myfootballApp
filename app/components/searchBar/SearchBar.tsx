@@ -19,7 +19,7 @@ export default async function SearchBar() {
                         className="w-10 object-cover rounded-full"
                     />
                     <div className="px-2 md:block hidden font-bold text-xl">
-                        MyFootballApp
+                        My FOOTYAPP
                     </div>
                 </a>
             </div>
